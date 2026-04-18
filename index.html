@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reema Portfolio</title>
+  <link rel="icon" type="image/png" href="logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="waveCanvas"></canvas>
+
+  <header class="navbar">
+    <a href="#home" class="logo-link">
+      <img src="logo.png" alt="Reema Logo" class="logo" />
+    </a>
+
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-label="Toggle navigation menu"
+      
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav" id="primary-nav">
+      <a href="#about">About</a>
+      <a href="#work">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#content">Content</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <img src="logo.png" alt="Reema Alzahrani" class="hero-logo" />
+
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+        <div class="mouse"></div>
+        <span>Scroll</span>
+      </a>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="about-text">
+        <div class="section-heading">
+          <span class="section-star">✦</span>
+          <h2>About Me</h2>
+        </div>
+
+        <p>
+        I’m a software engineering student who enjoys understanding how things work beyond the surface.
+        I naturally explore different areas like development, design, and communication, because I like seeing the full picture.
+        I like exploring ideas, building them step by step, and seeing how small details can change the whole experience.        </p>
+      </div>
+
+      <div class="about-card">
+        <img src="profile.PNG" alt="Reema Profile" />
+        <div class="about-caption">
+          <h3>Reema Alzahrani</h3>
+          <p>Software Engineering Student</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section statement">
+      <p>
+        I enjoy building digital experiences that are not only functional,
+        but also meaningful, clear, and human-centered.
+      </p>
+    </section>
+
+    <section class="section work" id="work">
+      <h2 class="center-title">Projects</h2>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <img src="fully.png" alt="Braillie project preview" class="project-image" />
+          <h3>Braillie — Assistive Technology Solution</h3>
+          <p>
+            A system that converts digital content into Braille, combining
+            software and hardware to improve accessibility for visually impaired users.
+          </p>
+          <div class="tags">
+            <span>Accessibility</span>
+            <span>Product</span>
+            <span>Innovation</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="mali.png" alt="Mali project preview" class="project-image" />
+          <h3>Mali — Financial Mobile App</h3>
+          <p>
+            A financial app concept focused on user experience, clarity,
+            and smarter financial interaction.
+          </p>
+          <div class="tags">
+            <span>Flutter</span>
+            <span>UI/UX</span>
+            <span>Mobile</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <video class="project-image" autoplay muted loop playsinline aria-label="Plano project preview">
+            <source src="plano.mp4" type="video/mp4" />
+          </video>
+          <h3>Plano — Productivity Web page </h3>
+          <p>
+            A productivity experience designed to support focus and motivation
+            through a clean interface and structured workflow.
+          </p>
+          <div class="tags">
+            <span>Web</span>
+            <span>UX</span>
+            <span>Front-End</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="Jassir.png" alt="JASSIR project preview" class="project-image" />
+          <h3>JASSIR - Job Opportunity Application </h3>
+          <p>
+            A portfolio website designed with modern UI, smooth motion,
+            and a strong personal visual identity.
+          </p>
+          <div class="tags">
+            <span>Figma</span>
+            <span>UI Design</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience">
+      <h2 class="center-title">Experience</h2>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <h3>
+            <a href="https://www.linkedin.com/posts/reemaalzahrani1_%D8%AA%D8%B4%D8%B1%D9%81%D8%AA-%D8%A8%D8%AA%D9%82%D8%AF%D9%8A%D9%85-%D8%AD%D9%81%D9%84-%D8%A7%D9%84%D9%85%D9%84%D8%AA%D9%82%D9%89-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%84%D9%84%D9%85%D9%88%D9%87%D8%A8%D8%A9-activity-7371793263881633792-B0J5?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDOO20BgOMNWdiD60-7ofKR0IVs90rnhmE" target="_blank" rel="noopener noreferrer">MC — International Forum on Giftedness in Higher Education</a>
+          </h3>
+          <h4>University of Jeddah</h4>
+          <p>
+            I was the MC for formal academic event, demonstrating
+            confidence, communication, and public speaking skills.
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <h3>
+            <a href="https://www.linkedin.com/posts/reemaalzahrani1_thrilled-to-announce-that-our-team-exhair-activity-7362501862178078720-KHjy?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDOO20BgOMNWdiD60-7ofKR0IVs90rnhmE" target="_blank" rel="noopener noreferrer">Top 10 Team — Avithon Hackathon</a>
+          </h3>
+          <h4>Hackathon Participation</h4>
+          <p>
+            Reached the top 10 teams in GACA Hackathon with EXHAIR, an AI-powered solution for Airports 
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <h3>Innovation Lab — Braillie Project</h3>
+          <h4>Project Development</h4>
+          <p>
+            Worked on shaping the Braillie concept in collaboration with Innovation lab at Monsh'aat .
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <h3>
+            <a href="https://www.linkedin.com/posts/reemaalzahrani1_thrilled-to-have-delivered-the-interface-activity-7403865486460923904-JQrq?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDOO20BgOMNWdiD60-7ofKR0IVs90rnhmE" target="_blank" rel="noopener noreferrer">Interface Path Workshop</a>
+          </h3>
+          <h4>UI/UX Workshop Presenter</h4>
+          <p>
+            Helped present interface design concepts, user thinking,
+            and digital experience basics.
+          </p>
+        </article>
+
+        <article class="timeline-item">
+          <h3>
+            <a href="https://www.linkedin.com/posts/reemaalzahrani1_ujabrinnovate-universityofjeddah-ujabrinnovate-activity-7382864764739268608-c6Cy?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDOO20BgOMNWdiD60-7ofKR0IVs90rnhmE" target="_blank" rel="noopener noreferrer">Platform Testing Team</a>
+          </h3>
+          <h4>UJ Innovate </h4>
+          <p>
+            Participated in testing and reviewing design and user flow issues
+            to improve the platform experience.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <h2 class="center-title">Skills</h2>
+
+      <div class="skills-marquee-wrap">
+        <div class="skills-marquee">
+          <div class="skills-track">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Flutter</span>
+            <span>Front-End Development</span>
+            <span>Software Engineering</span>
+            <span>UI/UX Design</span>
+            <span>Figma</span>
+            <span>User Flows</span>
+            <span>Wireframing</span>
+            <span>Prototyping</span>
+            <span>Visual Thinking</span>
+            <span>Product Thinking</span>
+            <span>Problem Solving</span>
+            <span>User-Centered Design</span>
+            <span>Public Speaking</span>
+            <span>Storytelling</span>
+            <span>Content Writing</span>
+          </div>
+          <div class="skills-track" aria-hidden="true">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Flutter</span>
+            <span>Front-End Development</span>
+            <span>Software Engineering</span>
+            <span>UI/UX Design</span>
+            <span>Figma</span>
+            <span>User Flows</span>
+            <span>Wireframing</span>
+            <span>Prototyping</span>
+            <span>Visual Thinking</span>
+            <span>Product Thinking</span>
+            <span>Problem Solving</span>
+            <span>User-Centered Design</span>
+            <span>Public Speaking</span>
+            <span>Storytelling</span>
+            <span>Content Writing</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section content" id="content">
+      <h2 class="center-title">Content</h2>
+
+      <div class="content-list">
+        <a class="content-card" href="https://www.linkedin.com/posts/reemaalzahrani1_%D8%AB%D9%84%D9%88%D8%AB%D9%8A%D8%A9-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA-6-%D9%87%D9%8A%D8%A7%D9%83%D9%84-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA-%D9%88%D8%A3%D9%87%D9%85%D9%8A%D8%AA%D9%87%D8%A7-activity-7368597406336163840-lKtJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDOO20BgOMNWdiD60-7ofKR0IVs90rnhmE" target="_blank" rel="noopener noreferrer">
+          <h3>Importance of Software Architecture</h3>
+          <p>Click to read on LinkedIn</p>
+        </a>
+
+        <a class="content-card" href="https://www.linkedin.com/posts/reemaalzahrani1_%D8%AB%D9%84%D9%88%D8%AB%D9%8A%D8%A9-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA-5-%D9%85%D9%87%D9%86%D8%AF%D8%B3%D9%8A-%D8%B6%D9%85%D8%A7%D9%86-%D8%A7%D9%84%D8%AC%D9%88%D8%AF%D8%A9-activity-7366155418819117057-Sn4p?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDOO20BgOMNWdiD60-7ofKR0IVs90rnhmE" target="_blank" rel="noopener noreferrer">
+          <h3>Who is a Quality Assurance Engineer?</h3>
+          <p>Click to read on LinkedIn</p>
+        </a>
+
+        <a class="content-card" href="https://www.linkedin.com/posts/reemaalzahrani1_%D8%AB%D9%84%D9%88%D8%AB%D9%8A%D8%A9-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%8A%D8%A9-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9-activity-7358463447920975872-XWCV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDOO20BgOMNWdiD60-7ofKR0IVs90rnhmE" target="_blank" rel="noopener noreferrer">
+          <h3>Project Management VS. Product Management</h3>
+          <p>Click to read on LinkedIn</p>
+        </a>
+
+        <a class="content-card" href="https://www.linkedin.com/posts/reemaalzahrani1_%D8%AB%D9%84%D9%88%D8%AB%D9%8A%D8%A9-%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89-%D9%85%D8%A7%D8%B0%D8%A7-%D9%8A%D8%B9%D9%86%D9%8A-%D8%A3%D9%86-%D8%AA%D9%83%D9%88%D9%86-activity-7356051827265576960-BzO0?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEDOO20BgOMNWdiD60-7ofKR0IVs90rnhmE" target="_blank" rel="noopener noreferrer">
+          <h3>What is the meaning of being a Software Engineer? </h3>
+          <p>Click to read on LinkedIn</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-stars">✦ ✦ ✦ ✦</div>
+      <h2>Let's Connect</h2>
+      <p>
+        Feel free to reach out for collaboration, projects, or just to say hi.
+      </p>
+
+      <div class="contact-links">
+        <a href="https://github.com/ReemaAlzhrani" class="social-btn" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+          <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.51.47-3.16-.63-3.36-1.21-.11-.3-.6-1.21-1.03-1.46-.35-.19-.85-.66-.01-.67.79-.01 1.35.74 1.54 1.05.9 1.55 2.34 1.11 2.91.85.09-.67.35-1.11.64-1.37-2.22-.26-4.55-1.14-4.55-5.05 0-1.11.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05.8-.23 1.65-.34 2.5-.34s1.7.11 2.5.34c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.92-2.34 4.79-4.57 5.05.36.32.68.93.68 1.89 0 1.37-.01 2.47-.01 2.81 0 .27.18.59.69.49A10.17 10.17 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/reemaalzahrani1" class="social-btn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">in</a>
+        <a href="https://drive.google.com/file/d/15vZTJyw1848sE_kN5co1uXlIYvpuaPjc/view?usp=sharing" class="cv-btn" target="_blank" rel="noopener noreferrer">Reema's CV</a>
+        <a href="mailto:iReema.alzhrani@gmail.com" class="email-btn" aria-label="Send email to Reema">
+          <svg class="email-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 6h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1Zm8 6.2L20 8H4l8 4.2ZM5 16h14V9.2l-6.53 3.44a1 1 0 0 1-.94 0L5 9.2V16Z" />
+          </svg>
+          <span>Email</span>
+        </a>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-left">
+          <img src="logo.png" alt="Reema Logo" />
+        </div>
+        <div class="footer-line"></div>
+        <p class="footer-copy">2025 All rights reserved.</p>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
